@@ -887,7 +887,7 @@ html {
   }
 
   .bg-first-screen {
-    background: url(img/banner-bg-1.jpg) no-repeat center;
+    background: url(/portfolio-public/piroll-public/img/banner-bg-1.jpg) no-repeat center;
     background-size: cover;
   }
 
