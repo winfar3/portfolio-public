@@ -623,6 +623,10 @@ textarea {
   padding: 60px 28px;
   opacity: .5;
 }
+  
+.clients__item {
+  flex: 1 1 100%;
+}
 
 .logos-icon {
   display: block;
