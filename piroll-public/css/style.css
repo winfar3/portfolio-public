@@ -477,6 +477,7 @@ textarea {
   font-weight: 600;
   color: #191919;
   letter-spacing: 0.001em;
+  text-align: center;
 }
 
 .sub-title {
@@ -743,6 +744,7 @@ html {
   -webkit-transition: background-color .3s linear;
   -o-transition: background-color .3s linear;
   transition: background-color .3s linear;
+  text-align: center;
 }
 
 .button:hover {
@@ -838,6 +840,10 @@ html {
   margin-bottom: 0;
 }
 
+.statistic__img {
+  margin: 0;
+}
+
 .statistic__value {
   font-size: 1.8rem;
   line-height: 3.0rem;
@@ -910,7 +916,7 @@ html {
   top: 50%;
   left: 50%;
   z-index: 100;
-  background: url(/img/gallery-icon.png) 0 0 no-repeat;
+  background: url(img/gallery-icon.png) 0 0 no-repeat;
 }
 
 .gallery__img {
@@ -941,7 +947,7 @@ html {
   grid-row: 7/8;
   grid-column: 1/-1;
   justify-self: center;
-  padding: 100px 0 50px 0;
+  padding: 100px 10px 50px;
 }
 
 .text-wrap {
@@ -1091,6 +1097,22 @@ html {
   opacity: .5;
 }
 
+.clients__item {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 425px) {
+  .clients__item {
+    flex: 1 1 50%;
+  } 
+}
+
+@media (min-width: 768px) {
+  .clients__item {
+    flex: 1 1 25%;
+  } 
+}
+
 .logos-icon {
   display: block;
   margin: 0 auto 25px;
@@ -1119,6 +1141,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 670px;
+  padding: 0 10px;
 }
 
 .form__input {
@@ -1248,7 +1271,7 @@ html {
   }
 
   .bg-first-screen {
-    background: url(/img/banner-bg-1.jpg) no-repeat center;
+    background: url(img/banner-bg-1.jpg) no-repeat 0% 35%;
     background-size: cover;
   }
 
@@ -1291,6 +1314,6 @@ html {
   }
 
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, minmax(255px, 1fr));
   }
 }
