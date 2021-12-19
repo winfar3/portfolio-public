@@ -756,13 +756,13 @@ html {
   grid-column: 2/4;
   justify-self: center;
   max-width: 670px;
-  padding: 100px 0;
+  padding: 30px 0px 0px 0px;
 }
 
 .skills {
   grid-row: 4/5;
   grid-column: 1/-1;
-  padding: 165px 28px;
+  padding: 50px 28px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -920,7 +920,9 @@ html {
 }
 
 .gallery__img {
-  width: 100%;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 .gallery__button {
@@ -947,7 +949,7 @@ html {
   grid-row: 7/8;
   grid-column: 1/-1;
   justify-self: center;
-  padding: 100px 10px 50px;
+  padding: 50px 10px 50px;
 }
 
 .text-wrap {
@@ -1006,7 +1008,7 @@ html {
 .testimonials {
   grid-row: 9/10;
   grid-column: 2/4;
-  padding: 165px 0 50px 0;
+  padding: 85px 0 50px 0;
   min-width: 0;
 }
 
@@ -1054,7 +1056,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .slick-dots li {
@@ -1098,18 +1100,18 @@ html {
 }
 
 .clients__item {
-  flex: 1 1 100%;
+  flex: 0 1 100%;
 }
 
 @media (min-width: 425px) {
   .clients__item {
-    flex: 1 1 50%;
+    flex: 0 1 50%;
   } 
 }
 
 @media (min-width: 768px) {
   .clients__item {
-    flex: 1 1 25%;
+    flex: 0 1 20%;
   } 
 }
 
@@ -1127,7 +1129,7 @@ html {
   grid-row: 11/12;
   grid-column: 2/4;
   justify-self: center;
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -1253,8 +1255,14 @@ html {
 }
 
 @media (min-width: 768px) {
+   .about {
+      padding: 50px 0px 10px 0px;
+   }
+   .skills {
+      padding: 50px 0;
+   }
   .footer {
-    padding: 100px 28px;
+    padding: 50px 28px;
     grid-column: 2/4;
     display: grid;
     grid-template-columns: 4fr 3fr 3fr;
@@ -1316,4 +1324,33 @@ html {
   .gallery {
     grid-template-columns: repeat(4, minmax(255px, 1fr));
   }
+   
+   .about {
+      padding: 100px 0px 60px 0px;
+   }
+   
+   .skills {
+      padding: 165px 0;
+   }
+   
+   .work-process {
+      padding: 100px 0 50px;
+   }
+   
+   .testimonials {
+      padding: 165px 0 50px 0;
+   }
+   
+   .slick-dots {
+      padding-top: 100px;
+   }
+   
+   .need-project {
+      padding: 100px 0;
+   }
+   
+   .footer {
+      padding: 100px 28px;
+   }
+   
 }
