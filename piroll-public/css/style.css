@@ -13,6 +13,11 @@ textarea {
   color: #222;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -470,8 +475,12 @@ textarea {
 
 .video-wrap {
   width: 100%;
-  max-width: 1170px;
+  max-width: 520px;
+  padding: 0 10px;
 }
+
+.video-wrap video {
+  width: 100%;
 
 .services {
   grid-row: 8/9;
@@ -602,6 +611,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 25px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -616,8 +626,8 @@ textarea {
 
 .logos-icon {
   display: block;
-  margin: 0 auto 25px;
-  padding: 0 28px;
+  margin: 0 auto;
+  padding: 0 5px;
 }
 
 .logos-icon:last-child {
@@ -642,6 +652,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 670px;
+  padding: 0 10px;
 }
 
 .form__input {
@@ -737,13 +748,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.menu__list {
-  margin-right: 50px;
+  -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+          justify-content: space-between;
 }
 
 .info,
@@ -836,12 +843,18 @@ html {
   letter-spacing: 0.0005em;
 }
 
+@media (max-width: 770px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
 @media (min-width: 768px) {
   .footer {
     padding: 100px 28px;
     grid-column: 2/4;
     display: grid;
-    grid-template-columns: 4fr 3fr 3fr 2fr;
+    grid-template-columns: 4fr 3fr 3fr;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
