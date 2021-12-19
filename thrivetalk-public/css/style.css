@@ -787,9 +787,9 @@ h3 {
   letter-spacing: 0.005em;
 }
 
-.suggestions:not(:last-child) {
+/* .suggestions:not(:last-child) {
   margin-bottom: 40px;
-}
+} */
 
 .suggestions__title {
   text-align: center;
@@ -811,9 +811,9 @@ h3 {
           align-items: center;
 }
 
-.suggestions__cards-first:not(:last-child) {
+/* .suggestions__cards-first:not(:last-child) {
   margin-bottom: 120px;
-}
+} */
 
 .suggestions__cards-second {
   display: -webkit-box;
@@ -1020,6 +1020,7 @@ h3 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  object-position: 0 40%;
 }
 
 .contact-us {
@@ -1073,6 +1074,7 @@ h3 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  object-position: 0 35%;
 }
 
 .footer {
@@ -1093,7 +1095,7 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 0;
-  gap: 50px;
+  gap: 20px;
 }
 
 .footer__item {
@@ -1109,7 +1111,7 @@ h3 {
 }
 
 .footer__title:not(:last-child) {
-  margin-bottom: 54px;
+  margin-bottom: 20px;
 }
 
 .footer__text {
@@ -1295,9 +1297,8 @@ body {
 
   .footer__item {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 calc((100%/2) - 50px);
-            flex: 1 1 calc((100%/2) - 50px);
-    padding: 0;
+        -ms-flex: 1 1 calc((100%/2) - 80px);
+            flex: 1 1 calc((100%/2) - 80px);
   }
 }
 
@@ -1330,6 +1331,10 @@ body {
   .about-us__wrapper {
     grid-template-columns: 1fr 1.7fr 1fr;
     padding: 150px 106px 76px;
+  }
+
+  .suggestions__cards-first:not(:last-child) {
+  margin-bottom: 120px;
   }
 
   .cards-first__link {
@@ -1378,6 +1383,10 @@ body {
     width: 100%;
   }
 
+  .should-know__img img {
+    object-position: center;
+  }
+
   .contact-us {
     margin-bottom: 0;
   }
@@ -1409,6 +1418,10 @@ body {
     width: 100%;
   }
 
+  .contact-us__img img {
+    object-position: center;
+  }
+
   .footer:not(:last-child) {
     margin-bottom: 0;
   }
@@ -1417,12 +1430,17 @@ body {
     max-width: 55%;
     margin-left: 45%;
     padding: 98px 68px;
+    gap: 50px;
   }
 
   .footer__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 calc((100%/3) - 50px);
             flex: 1 1 calc((100%/3) - 50px);
+  }
+
+  .footer__title:not(:last-child) {
+    margin-bottom: 54px;
   }
 
   .footer__img {
@@ -1433,6 +1451,12 @@ body {
     max-width: 45%;
     max-height: 100%;
     width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__item {
+    padding: 0;
   }
 }
 
