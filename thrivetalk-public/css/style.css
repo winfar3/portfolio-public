@@ -1304,7 +1304,7 @@ body {
 
 @media (min-width: 1024px) {
   .first-screen {
-    background: url("/img/first-screen/bg.png") #F4F9E2 no-repeat top right;
+    background: url("../img/first-screen/bg.png") #F4F9E2 no-repeat top right;
   }
 
   .main {
