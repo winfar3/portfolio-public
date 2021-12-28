@@ -477,7 +477,6 @@ textarea {
   font-weight: 600;
   color: #191919;
   letter-spacing: 0.001em;
-  text-align: center;
 }
 
 .sub-title {
@@ -757,6 +756,7 @@ html {
   justify-self: center;
   max-width: 670px;
   padding: 30px 0px 0px 0px;
+  text-align: center;
 }
 
 .skills {
@@ -950,6 +950,7 @@ html {
   grid-column: 1/-1;
   justify-self: center;
   padding: 50px 10px 50px;
+  text-align: center;
 }
 
 .text-wrap {
@@ -1097,6 +1098,7 @@ html {
           align-items: center;
   padding: 60px 28px;
   opacity: .5;
+  row-gap: 20px;
 }
 
 .clients__item {
@@ -1258,9 +1260,6 @@ html {
    .about {
       padding: 50px 0px 10px 0px;
    }
-   .skills {
-      padding: 50px 0;
-   }
   .footer {
     padding: 50px 28px;
     grid-column: 2/4;
@@ -1279,7 +1278,7 @@ html {
   }
 
   .bg-first-screen {
-    background: url(img/banner-bg-1.jpg) no-repeat 0% 35%;
+    background: url(../img/banner-bg-1.jpg) no-repeat 0% 35%;
     background-size: cover;
   }
 
@@ -1330,7 +1329,7 @@ html {
    }
    
    .skills {
-      padding: 165px 0;
+      padding: 165px 28px;
    }
    
    .work-process {
