@@ -4,16 +4,296 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     
     <title>Portfilio public</title>
 </head>
 <body>
-    <h1>Links to works</h1>
-    <a href="https://winfar3.github.io/portfolio-public/piroll-public/">Piroll example</a><br>
-    <a href="https://winfar3.github.io/portfolio-public/thrivetalk-public/">Thrivetalk example</a><br>
-    <a href="https://winfar3.github.io/portfolio-public/construct/">Construct example</a><br>
-    <a href="https://winfar3.github.io/portfolio-public/alvio-landing-page-public/">Alvio landing page example</a><br>
-    <a href="https://winfar3.github.io/portfolio-public/novik-blog/">Novik blog example</a><br>
-    <a href="https://winfar3.github.io/portfolio-public/freebie-agency-public/">Freebie agency example</a><br>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__menu menu">
+                <a href="" class="menu__link">Hello</a>
+                <a href="" class="menu__link">Portfolio</a>
+                <a href="" class="menu__link">Skills</a>
+                <a href="" class="menu__link">Experience</a>
+            </nav>
+        </header>
+
+        <main class="page">
+            <div class="page__wrapper">
+                
+                <div class="page__screen screen">
+                    <div class="screen__content">
+                        <div></div>
+                        <div class="hello__wrapper">
+                            <h1 class="hello__title">
+                                Hello, I'm Bogdan <br> A frontend web developer
+                            </h1>
+                            <a class="hello__link" onclick="slideNext()">Get more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="portfolio" class="page__screen screen">
+                    <div class="screen__content">
+                        <h2 class="screen__title">Portfolio</h2>
+                        
+                        <div class="slider">
+                            <div class="slider__wrapper">
+                                
+                                <div class="slider__screen">
+                                    <div class="slider__item">
+                                        <div class="slider__image">
+                                            <a href="https://winfar3.github.io/portfolio-public/freebie-agency-public/" target="_blank" class="slider__link">
+                                                <img src="images/freebie-agency-full-preview.webp" alt="preview" class="slider__img">
+                                            </a>
+                                        </div>
+                                        <h3 class="slider__title">Freebie agency</h3>
+                                        <div class="slider__links">
+                                            <a href="https://winfar3.github.io/portfolio-public/freebie-agency-public/" target="_blank" class="slider__link">Demo</a>
+                                            <a href="https://github.com/winfar3/code-example/tree/main/freebie-agency-code-example" target="_blank" class="slider__link">Code</a>
+                                        </div>
+                                        <div class="slider__skills">
+                                            <span class="slider__skill">html5</span>
+                                            <span class="slider__skill">scss</span>
+                                            <span class="slider__skill">flex</span>
+                                            <span class="slider__skill">grid</span>
+                                            <span class="slider__skill">responsive</span>
+                                            <span class="slider__skill">bem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slider__screen">
+                                    <div class="slider__item">
+                                        <div class="slider__image">
+                                            <a href="https://winfar3.github.io/portfolio-public/novik-blog/" target="_blank" class="slider__link">
+                                                <img src="images/novik-blog-full-preview.webp" alt="preview" class="slider__img">
+                                            </a>
+                                        </div>
+                                        <h3 class="slider__title">Novik blog</h3>
+                                        <div class="slider__links">
+                                            <a href="https://winfar3.github.io/portfolio-public/novik-blog/" target="_blank" class="slider__link">Demo</a>
+                                            <a href="https://github.com/winfar3/code-example/tree/main/novik-blog-code-example" target="_blank" class="slider__link">Code</a>
+                                        </div>
+                                        <div class="slider__skills">
+                                            <span class="slider__skill">html5</span>
+                                            <span class="slider__skill">scss</span>
+                                            <span class="slider__skill">flex</span>
+                                            <span class="slider__skill">responsive</span>
+                                            <span class="slider__skill">bem</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider__screen">
+                                    <div class="slider__item">
+                                        <div class="slider__image">
+                                            <a href="https://winfar3.github.io/portfolio-public/alvio-landing-page-public/" target="_blank" class="slider__link">
+                                                <img src="images/alvio-landing-full-preview.webp" alt="preview" class="slider__img">
+                                            </a>
+                                        </div>
+                                        <h3 class="slider__title">Alvio landing</h3>
+                                        <div class="slider__links">
+                                            <a href="https://winfar3.github.io/portfolio-public/alvio-landing-page-public/" target="_blank" class="slider__link">Demo</a>
+                                        </div>
+                                        <div class="slider__skills">
+                                            <span class="slider__skill">html5</span>
+                                            <span class="slider__skill">scss</span>
+                                            <span class="slider__skill">flex</span>
+                                            <span class="slider__skill">responsive</span>
+                                            <span class="slider__skill">bem</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider__screen">
+                                    <div class="slider__item">
+                                        <div class="slider__image">
+                                            <a href="https://winfar3.github.io/portfolio-public/construct/" target="_blank" class="slider__link">
+                                                <img src="images/construct-full-preview.webp" alt="preview" class="slider__img">
+                                            </a>
+                                        </div>
+                                        <h3 class="slider__title">Novik blog</h3>
+                                        <div class="slider__links">
+                                            <a href="https://winfar3.github.io/portfolio-public/construct/" target="_blank" class="slider__link">Demo</a>
+                                            <a href="https://github.com/winfar3/code-example/tree/main/construct-code-example" target="_blank" class="slider__link">Code</a>
+                                        </div>
+                                        <div class="slider__skills">
+                                            <span class="slider__skill">html5</span>
+                                            <span class="slider__skill">scss</span>
+                                            <span class="slider__skill">flex</span>
+                                            <span class="slider__skill">responsive</span>
+                                            <span class="slider__skill">bem</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider__screen">
+                                    <div class="slider__item">
+                                        <div class="slider__image">
+                                            <a href="https://winfar3.github.io/portfolio-public/thrivetalk-public/" target="_blank" class="slider__link">
+                                                <img src="images/thrivetalk-public-full-preview.webp" alt="preview" class="slider__img">
+                                            </a>
+                                        </div>
+                                        <h3 class="slider__title">Alvio landing</h3>
+                                        <div class="slider__links">
+                                            <a href="https://winfar3.github.io/portfolio-public/thrivetalk-public/" target="_blank" class="slider__link">Demo</a>
+                                        </div>
+                                        <div class="slider__skills">
+                                            <span class="slider__skill">html5</span>
+                                            <span class="slider__skill">scss</span>
+                                            <span class="slider__skill">flex</span>
+                                            <span class="slider__skill">responsive</span>
+                                            <span class="slider__skill">bem</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider__screen">
+                                    <div class="slider__item">
+                                        <div class="slider__image">
+                                            <a href="https://winfar3.github.io/portfolio-public/piroll-public/" target="_blank" class="slider__link">
+                                                <img src="images/piroll-public-full-preview.webp" alt="preview" class="slider__img">
+                                            </a>
+                                        </div>
+                                        <h3 class="slider__title">Alvio landing</h3>
+                                        <div class="slider__links">
+                                            <a href="https://winfar3.github.io/portfolio-public/piroll-public/" target="_blank" class="slider__link">Demo</a>
+                                        </div>
+                                        <div class="slider__skills">
+                                            <span class="slider__skill">html5</span>
+                                            <span class="slider__skill">scss</span>
+                                            <span class="slider__skill">flex</span>
+                                            <span class="slider__skill">responsive</span>
+                                            <span class="slider__skill">bem</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="slider__pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__screen screen">
+                    <div class="screen__content">
+                        <h2 class="screen__title">Skills</h2>
+
+                        <div class="skills">
+                                <input type="radio" name="skills" id="skills-1" class="skills__input" checked="checked">
+                                <label for="skills-1" class="skills__title">Frontend</label>
+                                <div class="skills__text">
+                                    <ul class="skills__list">
+                                        <li class="skills__item"><img src="images/svg/html-5.svg" alt="icon"> HTML5</li>
+                                        <li class="skills__item"><img src="images/svg/css.svg" alt="icon"> CSS3</li>
+                                        <li class="skills__item"><img src="images/svg/sass.svg" alt="icon"> SCSS</li>
+                                        <li class="skills__item"><img src="images/svg/js.svg" alt="icon"> JS</li>
+                                        <li class="skills__item"><img src="images/svg/react.svg" alt="icon"> React <span class="italic">(studying)</span></li>
+                                    </ul>
+                                </div>
+
+                                <input type="radio" name="skills" id="skills-2" class="skills__input">
+                                <label for="skills-2" class="skills__title">Dev Tools</label>
+                                <div class="skills__text">
+                                    <ul class="skills__list">
+                                        <li class="skills__item"><img src="images/svg/git.svg" alt="icon"> GIT</li>
+                                        <li class="skills__item"><img src="images/svg/gulp-1.svg" alt="icon">GULP</li>
+                                    </ul>
+                                </div>
+                            
+                                <input type="radio" name="skills" id="skills-3" class="skills__input">
+                                <label for="skills-3" class="skills__title">Design Tools</label>
+                                <div class="skills__text">
+                                    <ul class="skills__list">
+                                        <li class="skills__item"><img src="images/svg/figma.svg" alt="icon"> Figma</li>
+                                        <li class="skills__item"><img src="images/svg/photoshop-cc-6.svg" alt="icon"> Photoshop</li>
+                                        <li class="skills__item"><img src="images/svg/illustrator.svg" alt="icon"> Illustrator</li>
+                                    </ul>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__screen screen">
+                    <div class="screen__content">
+                        <h2 class="screen__title">Experience</h2>
+                        
+                        <div class="experience">
+                            <div class="experience-item">
+                                <input type="radio" name="experience" id="experience-1" class="experience__input">
+                                <label for="experience-1" class="experience__title">Shop assistant</label>
+                                <div class="experience__text">
+                                    <p class="italic">February 2021 - January 2022</p>
+                                    <ul class="experience__list">
+                                        <li class="experience__item">Client consultation, order collection, cash discipline</li>
+                                        <li class="experience__item">Compliance with company standards, maintaining cleanliness in the store</li>
+                                        <li class="experience__item">Reception, display of goods, quality control and timing of implementation</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <input type="radio" name="experience" id="experience-2" class="experience__input">
+                                <label for="experience-2" class="experience__title">Copywriter</label>
+                                <div class="experience__text">
+                                    <p class="italic">January 2019 - January 2021</p>
+                                    <ul class="experience__list">
+                                        <li class="experience__item">Copywriting, rewriting, keyword selection</li>
+                                        <li class="experience__item">Writing articles, reviews, promotional texts</li>
+                                        <li class="experience__item">Selection and editing of graphic images</li>
+                                        <li class="experience__item">Simple html/css layout</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="experience-item">
+                                <input type="radio" name="experience" id="experience-3" class="experience__input">
+                                <label for="experience-3" class="experience__title">Content manager</label>
+                                <div class="experience__text">
+                                    <p class="italic">May 2015 - November 2018</p>
+                                    <ul class="experience__list">
+                                        <li class="experience__item">Information search and processing
+                                        </li>
+                                        <li class="experience__item">Selection of keywords, preparation for SEO optimization</li>
+                                        <li class="experience__item">Writing articles, reviews, promotional texts</li>
+                                        <li class="experience__item">Selection and editing of graphic images</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="experience-item">
+                                <input type="radio" name="experience" id="experience-4" class="experience__input">
+                                <label for="experience-4" class="experience__title">Computer shop assistant</label>
+                                <div class="experience__text">
+                                    <p class="italic">January 2013 - May 2013</p>
+                                    <ul class="experience__list">
+                                        <li class="experience__item">Client consultation</li>
+                                        <li class="experience__item">Sales registration</li>
+                                        <li class="experience__item">Control of current innovations in the computer field</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="page__pagination"></div>
+
+            <!-- <div class="page__scroll"></div> -->
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
