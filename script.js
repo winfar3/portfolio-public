@@ -28,11 +28,11 @@ let pageSlider = new Swiper(".page", {
         bulletClass: "page__bullet",
         bulletActiveClass: "page__bullet_active",
     },
-    // scrollbar: {
-    //     el: ".page__scroll",
-    //     dragClass: "page__drag-scroll",
-    //     draggable: true,
-    // },
+    scrollbar: {
+        el: ".page__scroll",
+        dragClass: "page__drag-scroll",
+        // draggable: true,
+    },
     init: false,
     on: {
         init: function() {
@@ -82,6 +82,8 @@ function menuSlider() {
                 menuSliderRemove();
                 pageSlider.slideTo(index, 800);
                 menuLink.classList.add("_active");
+                document.getElementById('header__burger').classList.remove('active');
+                document.getElementById('header__menu').classList.remove('active');
                 e.preventDefault();
             })
         }
@@ -120,3 +122,10 @@ function setScrollType() {
 };
 
 pageSlider.init();
+
+document.getElementById('header__burger').onclick = function() {
+    // document.getElementById('header').classList.toggle('active');
+    document.getElementById('header__burger').classList.toggle('active');
+    document.getElementById('header__menu').classList.toggle('active');
+    // document.getElementById('body').classList.toggle('lock');
+}
