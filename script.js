@@ -16,6 +16,7 @@ let pageSlider = new Swiper(".page", {
     mousewheel: {
         sensitivity: 1,
     },
+    simulateTouch: false,
     watchOverflow: true,
     speed: 800,
     observer: true,
@@ -54,6 +55,10 @@ let portfolioSlider = new Swiper(".slider", {
     wrapperClass: "slider__wrapper",
     slideClass: "slider__screen",
     direction: "horizontal",
+    navigation: {
+        nextEl : ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     // slidesPerView: "auto",
     nested: true,
     watchOverflow: true,
@@ -61,13 +66,6 @@ let portfolioSlider = new Swiper(".slider", {
     observer: true,
     observeParents: true,
     observeSliderChildren: true,
-    pagination: {
-        el: ".slider__pagination",
-        type: "bullets",
-        clickable: true,
-        bulletClass: "slider__bullet",
-        bulletActiveClass: "slider__bullet_active",
-    },
 })
 
 let menuLinks = document.querySelectorAll(".menu__link");
@@ -91,7 +89,7 @@ function menuSlider() {
 };
 
 function slideNext() {
-    pageSlider.slideTo(1, 800);
+    pageSlider.slideTo(pageSlider.activeIndex + 1, 800);
 }
 
 function menuSliderRemove() {
@@ -124,8 +122,16 @@ function setScrollType() {
 pageSlider.init();
 
 document.getElementById('header__burger').onclick = function() {
-    // document.getElementById('header').classList.toggle('active');
     document.getElementById('header__burger').classList.toggle('active');
     document.getElementById('header__menu').classList.toggle('active');
-    // document.getElementById('body').classList.toggle('lock');
+}
+
+
+function removeChecked(elementId) {
+    let temp = document.getElementsByClassName('experience__input');
+    for (i = 0; i < temp.length; i++) {
+        if (temp[i].id !== elementId) {
+            temp[i].checked = false;
+        }
+    }
 }

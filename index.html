@@ -181,7 +181,9 @@
                                 </div>
 
                             </div>
-                            <div class="slider__pagination"></div>
+                            <div class="swiper-button-prev"><img src="./images/arrow-down-sign-to-navigate.png" alt="arrow" class="swiper-img"></div>
+                            <div class="swiper-button-next"><img src="./images/arrow-down-sign-to-navigate.png" alt="arrow" class="swiper-img"></div>
+                            <a class="hello__link" onclick="slideNext()">Skills</a>
                         </div>
                     </div>
                 </div>
@@ -221,8 +223,8 @@
                                         <li class="skills__item"><img src="images/svg/illustrator.svg" alt="icon"> Illustrator</li>
                                     </ul>
                                 </div>
-
                         </div>
+                        <a class="hello__link" onclick="slideNext()">Experience</a>
                     </div>
                 </div>
 
@@ -232,7 +234,7 @@
                         
                         <div class="experience">
                             <div class="experience-item">
-                                <input type="radio" name="experience" id="experience-1" class="experience__input">
+                                <input type="checkbox" name="experience" id="experience-1" class="experience__input"  onclick="removeChecked(this.id)">
                                 <label for="experience-1" class="experience__title">Shop assistant</label>
                                 <div class="experience__text">
                                     <p class="italic">February 2021 - January 2022</p>
@@ -245,7 +247,7 @@
                             </div>
 
                             <div class="experience-item">
-                                <input type="radio" name="experience" id="experience-2" class="experience__input">
+                                <input type="checkbox" name="experience" id="experience-2" class="experience__input" onclick="removeChecked(this.id)">
                                 <label for="experience-2" class="experience__title">Copywriter</label>
                                 <div class="experience__text">
                                     <p class="italic">January 2019 - January 2021</p>
@@ -259,7 +261,7 @@
                             </div>
                             
                             <div class="experience-item">
-                                <input type="radio" name="experience" id="experience-3" class="experience__input">
+                                <input type="checkbox" name="experience" id="experience-3" class="experience__input" onclick="removeChecked(this.id)">
                                 <label for="experience-3" class="experience__title">Content manager</label>
                                 <div class="experience__text">
                                     <p class="italic">May 2015 - November 2018</p>
@@ -274,7 +276,7 @@
                             </div>
                             
                             <div class="experience-item">
-                                <input type="radio" name="experience" id="experience-4" class="experience__input">
+                                <input type="checkbox" name="experience" id="experience-4" class="experience__input" onclick="removeChecked(this.id)">
                                 <label for="experience-4" class="experience__title">Computer shop assistant</label>
                                 <div class="experience__text">
                                     <p class="italic">January 2013 - May 2013</p>
