@@ -597,6 +597,31 @@ h4 {
   background-color: #FFFFFF;
 }
 
+.navigation.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  
+  width: 100%;
+
+  background-color: #fff;
+
+  animation-name: show-header;
+  animation-duration: 1s;
+}
+
+@keyframes show-header {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 .navigation__burger {
   position: absolute;
   top: 20px;

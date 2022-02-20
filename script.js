@@ -126,7 +126,6 @@ document.getElementById('header__burger').onclick = function() {
     document.getElementById('header__menu').classList.toggle('active');
 }
 
-
 function removeChecked(elementId) {
     let temp = document.getElementsByClassName('experience__input');
     for (i = 0; i < temp.length; i++) {
