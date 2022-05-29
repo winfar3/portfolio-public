@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Main page</title>
+</head>
+<body>
+    <header class="header">
+    <div class="container container_big">
+        <div class="header__wrapper">
+            <a href="#" class="logo header__logo">
+                <img class="header-logo__img" src="img/logo.webp">
+                <span class="header-logo__text">NinjaMail</span>
+            </a>
+            <div class="header__links">
+                <nav class="header__navigation header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><a href="#" class="header-nav__link uppercase">FEATURES</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link uppercase">PRICING</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link uppercase">SERVICES</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link uppercase">PARTNERS</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="button button_sing-up uppercase">SIGN UP FREE</a>
+            </div>
+        </div>
+    </div>
+</header>
+    <main class="main">
+        <section class="hero">
+    <div class="container">
+        <div class="hero__wrapper">
+            <div class="hero__image">
+                <img src="img/hero/01.webp" alt="photo" class="imgCover">
+            </div>
+            <div class="hero__info">
+                <h1 class="hero__title">Create Stunning Email Campaigns</h1>
+                <p class="hero__subtitle">Create and launch email campaigns that captivate your customers in just a few clicks.</p>
+                <div class="hero__buttons">
+                    <a href="#" class="button hero__button uppercase">TRY NOW</a>
+                    <a href="#" class="button hero__button uppercase">GET A DEMO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="video">
+    <div class="container">
+        <div class="video__wrapper">
+
+            <h2 class="video__title">Reach More Customers</h2>
+            <a href="#" class="video__button button button_white">LEARN HOW</a>
+            <div class="video__image">
+                <picture>
+                    <source media="(max-width: 425px)" srcset="img/video/video-mobile.webp">
+                    <source media="(max-width: 768px)" srcset="img/video/video-tablet.webp">
+                    <source media="(max-width: 1024px)" srcset="img/video/video-desktop.webp">
+                    <img src="img/video/video-desktop.webp" alt="video poster" class="video__img imgCover">
+                </picture>
+            </div>
+
+        </div>
+    </div>
+</section>
+        <section class="blog">
+  <div class="container">
+    <div class="blog__wrapper">
+
+      <div class="blog__info">
+        <h2 class="blog__title">
+          The source for proven, engaging email campaigns
+        </h2>
+        <p class="blog__text">
+          Whether you’re a startup, small business, e-commerce store, or want to promote your app, NinjaMail has the feature set tailored for your business. 
+        </p>
+      </div>
+      
+      <div class="blog__card blog-card blog-card_position">
+        <div class="blog-card__image">
+          <a href="#">
+            <picture><source srcset="img/blog/2.webp" type="image/webp"><img class="imgCover" src="img/blog/2.png" alt="people"></picture>
+          </a>
+        </div>
+        <p class="blog-card__description">
+          Start building and sharing with your team today. NinjaMail is renowned for its industry leading team collaboration tools.
+        </p>
+        <a href="#" class="blog-card__link">Learn More ></a>
+      </div>
+
+      <div class="blog__card blog-card">
+        <div class="blog-card__image">
+          <a href="#">
+            <picture><source srcset="img/blog/1.webp" type="image/webp"><img class="imgCover" src="img/blog/1.png" alt="woman"></picture>
+          </a>
+        </div>  
+        <p class="blog-card__description">
+          Launch campaigns but also find new customers. Our unique platform handles campaigns from start to end.
+        </p>  
+        <a href="#" class="blog-card__link">Learn More ></a>
+      </div>  
+      
+    </div>
+  </div>
+</section>
+        <section class="reviews">
+  <div class="container">
+    <div class="reviews__wrapper">
+
+      <div class="reviews__info">
+        <h2 class="reviews__title">
+          Learn how others are reaching their audience easier than ever before.
+        </h2>
+        <form action="" class="reviews__form">
+          <label class="reviews__row">
+            <input class="reviews__input" type="email" placeholder="Enter your email" id="email" required>
+            <p class="reviews__accept">Thanks! Email received.</p>
+          </label>
+          <button class="button reviews__button" type="button" onclick="emailReceived()">JOIN OUR LIST</button>
+        </form>
+      </div>
+
+      <div class="reviews__comments reviews-comments">
+
+        <div class="reviews-comments__item">
+          <a href="#" class="reviews-comments__link">
+            <div class="reviews-comments__image">
+              <img class="imgCover" src="img/reviews/1.webp" alt="barista">
+            </div>
+          </a>
+          <p class="reviews-comments__name">Frankie</p>
+          <p class="reviews-comments__subname">Member since 2016</p>
+        </div>
+
+        <div class="reviews-comments__item">
+          <a href="#" class="reviews-comments__link">
+            <div class="reviews-comments__image">
+              <img class="imgCover" src="img/reviews/2.webp" alt="barista">
+            </div>
+          </a>
+          <p class="reviews-comments__name">Camile</p>
+          <p class="reviews-comments__subname">Member since 2012</p>
+        </div>
+
+        <div class="reviews-comments__item">
+          <a href="#" class="reviews-comments__link">
+            <div class="reviews-comments__image">
+              <img class="imgCover" src="img/reviews/3.webp" alt="barista">
+            </div>
+          </a>
+          <p class="reviews-comments__name">Elayne</p>
+          <p class="reviews-comments__subname">Member since 2018</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+        <section class="partners">
+  <div class="container">
+    <div class="partners__wrapper">
+
+      <h2 class="partners__title">All the best brands <br> already use us.</h2>
+      <div class="partners__links">
+        <a href="#" class="partners__link">
+          <div class="partners__image">
+            <picture><source srcset="img/partners/Logo1.webp" type="image/webp"><img src="img/partners/Logo1.png" alt="Last Knight" class="imgCover"></picture>
+          </div>
+        </a>
+
+        <a href="#" class="partners__link">
+          <div class="partners__image">
+            <picture><source srcset="img/partners/Logo2.webp" type="image/webp"><img src="img/partners/Logo2.png" alt="Dragon eye" class="imgCover"></picture>
+          </div>
+        </a>
+
+        <a href="#" class="partners__link">
+          <div class="partners__image">
+            <picture><source srcset="img/partners/Logo3.webp" type="image/webp"><img src="img/partners/Logo3.png" alt="Quest ai" class="imgCover"></picture>
+          </div>
+        </a>
+
+        <a href="#" class="partners__link">
+          <div class="partners__image">
+            <picture><source srcset="img/partners/Logo4.webp" type="image/webp"><img src="img/partners/Logo4.png" alt="RadioTee" class="imgCover"></picture>
+          </div>
+        </a>
+
+        <a href="#" class="partners__link">
+          <div class="partners__image">
+            <picture><source srcset="img/partners/Logo5.webp" type="image/webp"><img src="img/partners/Logo5.png" alt="Gamecommerce" class="imgCover"></picture>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+        <section class="get-started">
+  <div class="container">
+    <div class="get-started__wrapper">
+
+      <h2 class="get-started__title">Get started today!</h2>
+      <a href="#" class="button button_white uppercase get-started__button">PICK A PLAN</a>
+
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__info">
+        <a href="#" class="logo footer__logo">
+          <img class="footer-logo__img" src="img/logo.webp" />
+          <span class="footer-logo__text">NinjaMail</span>
+        </a>
+
+        <div class="footer__nav">
+          
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Services</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Partners</a>
+              </li>
+            </ul>
+
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Tutorials</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Resources</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Help Center</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Templates</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Case Studies</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Medium</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Twitter</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Facebook</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Instagram</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">LinkedIn</a>
+              </li>
+            </ul>
+
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Slack</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Jobs</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="copyright">
+          NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All
+          rights reserved.
+        </p>
+
+        <ul class="copyright__nav">
+          <li class="copyright__item">
+            <a href="#" class="copyright__link">Terms & Conditions</a>
+          </li>
+          <li class="copyright__item">
+            <a href="#" class="copyright__link">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+</html>
