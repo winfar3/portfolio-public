@@ -5,6 +5,17 @@ document.getElementById('navigation__burger').onclick = function() {
     document.getElementById('body').classList.toggle('lock');
 }
 
+const menu = document.getElementById("nav");
+menuTopPossition = menu.getBoundingClientRect().y;
+
+window.onscroll = function showmenu() {
+    if (window.pageYOffset > menuTopPossition) {
+        menu.classList.add("fixed");
+    } else {
+        menu.classList.remove("fixed");
+    }
+}
+
 let inst = document.getElementsByClassName('nav__link');
 
 for (ins of inst) {

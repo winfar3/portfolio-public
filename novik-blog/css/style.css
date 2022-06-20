@@ -608,6 +608,17 @@ body.lock {
 
 .nav {
   display: none;
+  border-bottom: 1px solid #828282;
+}
+
+.nav.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  padding: 0 40px;
+  background-color: #FFFFFF;
 }
 
 .nav__list {
@@ -621,7 +632,6 @@ body.lock {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 32px 0;
-  border-bottom: 1px solid #828282;
 }
 
 .nav__item {
