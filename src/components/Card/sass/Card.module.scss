@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 7px 15px rgba(14, 79, 210, 0.3);
+  transition: all 0.3s ease-in-out;
+
+  &_hover {
+    box-shadow: 0 7px 15px rgba(14, 79, 210, 0.7);
+  }
+}
+
+.skillBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0;
+  padding: 0 10px;
+  list-style: none;
+
+  &__item {
+    padding: 0px 7px;
+    border-left: 4px solid rgba(14, 79, 210, 0.3);
+    cursor: default;
+    font-size: 1.2rem;
+  }
+}
