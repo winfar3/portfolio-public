@@ -10,7 +10,7 @@ export const LayoutExamplesData = [
   {
     id: "ninjaMail",
     title: "Ninja Mail",
-    link: "https://winfar3.github.io/portfolio-public/ninja-mail/",
+    link: "https://winfar3.github.io/portfolio-public/pet-projects/ninja-mail/",
     skills: [
         "html5",
         "scss",
@@ -24,7 +24,7 @@ export const LayoutExamplesData = [
   {
     id: "freebieAgency",
     title: "Freebie agency",
-    link: "https://winfar3.github.io/portfolio-public/freebie-agency-public/",
+    link: "https://winfar3.github.io/portfolio-public/pet-projects/freebie-agency-public/",
     skills: [
         "html5",
         "scss",
@@ -39,7 +39,7 @@ export const LayoutExamplesData = [
   {
     id: "novikBlog",
     title: "Novik blog",
-    link: "https://winfar3.github.io/portfolio-public/novik-blog/",
+    link: "https://winfar3.github.io/portfolio-public/pet-projects/novik-blog/",
     skills: [
         "html5",
         "scss",
@@ -53,7 +53,7 @@ export const LayoutExamplesData = [
   {
     id: "alvioLanding",
     title: "Alvio landing",
-    link: "https://winfar3.github.io/portfolio-public/alvio-landing-page-public/",
+    link: "https://winfar3.github.io/portfolio-public/pet-projects/alvio-landing-page-public/",
     skills: [
         "html5",
         "scss",
@@ -67,7 +67,7 @@ export const LayoutExamplesData = [
   {
     id: "construct",
     title: "Construct",
-    link: "https://winfar3.github.io/portfolio-public/construct/",
+    link: "https://winfar3.github.io/portfolio-public/pet-projects/construct/",
     skills: [
         "html5",
         "scss",
@@ -81,7 +81,7 @@ export const LayoutExamplesData = [
   {
     id: "thrivetalk",
     title: "Thrivetalk",
-    link: "https://winfar3.github.io/portfolio-public/thrivetalk-public/",
+    link: "https://winfar3.github.io/portfolio-public/pet-projects/thrivetalk-public/",
     skills: [
         "html5",
         "scss",
@@ -95,7 +95,7 @@ export const LayoutExamplesData = [
   {
     id: "piroll",
     title: "Piroll",
-    link: "https://winfar3.github.io/portfolio-public/piroll-public/",
+    link: "https://winfar3.github.io/portfolio-public/pet-projects/piroll-public/",
     skills: [
         "html5",
         "scss",
