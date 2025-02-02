@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-public/static/css/main.8f6358d4.css",
-    "main.js": "/portfolio-public/static/js/main.feb9324c.js",
+    "main.js": "/portfolio-public/static/js/main.d422c5ef.js",
     "static/js/453.30fd7b8e.chunk.js": "/portfolio-public/static/js/453.30fd7b8e.chunk.js",
     "static/media/construct-full-preview.webp": "/portfolio-public/static/media/construct-full-preview.d275cdf214dd55699f15.webp",
     "static/media/ninja-mail-full-preview.webp": "/portfolio-public/static/media/ninja-mail-full-preview.e45c85bfbf2c4be5b727.webp",
@@ -27,11 +27,11 @@
     "static/media/css.svg": "/portfolio-public/static/media/css.e2464eba05b257910f6fe3399bdb3aca.svg",
     "static/media/html-5.svg": "/portfolio-public/static/media/html-5.50dfb7630f504b04b5d4cd134619fe3c.svg",
     "main.8f6358d4.css.map": "/portfolio-public/static/css/main.8f6358d4.css.map",
-    "main.feb9324c.js.map": "/portfolio-public/static/js/main.feb9324c.js.map",
+    "main.d422c5ef.js.map": "/portfolio-public/static/js/main.d422c5ef.js.map",
     "453.30fd7b8e.chunk.js.map": "/portfolio-public/static/js/453.30fd7b8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f6358d4.css",
-    "static/js/main.feb9324c.js"
+    "static/js/main.d422c5ef.js"
   ]
 }
